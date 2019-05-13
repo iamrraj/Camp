@@ -1,0 +1,148 @@
+{% extends 'base.html' %} 
+
+{% load humanize %}
+
+{% block title %} Hire A Camp {% endblock %}
+
+{% block js %}
+
+<script language="javascript" type="text/javascript">
+
+
+</script>
+
+{% endblock %}
+  
+{% block content %}
+
+<!-- Modal -->
+
+
+<!-- Showcase -->
+<section id="fact1">
+    <div class="container text-center">
+      <div class="home-search ">
+        <div class="overlay">
+          <h1 class="display-4 mb-4 text-white">
+            Hire A Camp
+          </h1>
+          <p class="lead text-white">Book your magical stay instantly anywhere in India.
+           </p>
+          <div class="search">
+            <form action="">
+              <!-- Form Row 1 -->
+              <div class="form-row">
+                <div class="col-md-12 ">
+                  <label class="sr-only">Keywords</label>
+                  <input type="text" name="keywords" class="form-control" placeholder="Keyword (Location, Price, Place)">
+                </div>
+
+
+               <!-- <div class="col-md-6 mb-3">
+                  <label class="sr-only">Specialities</label>
+                  <select name="state" class="form-control">
+                    <option selected="true" disabled="disabled">Specialities (All)</option>
+                    {% for key,value in statee.items %}
+                      <option value="{{ key }}">{{ value }}</option>
+                    {% endfor %} 
+                  </select>
+                </div>
+              </div> -->
+              <!-- Form Row 2 -->
+              <!-- <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label class="sr-only">State</label>
+                  <select name="bedrooms" class="form-control">
+                    <option selected="true" disabled="disabled">States (All)</option>
+                    {% for key,value in state_choices.items %}
+                      <option value="{{ key }}">{{ value }}</option>
+                    {% endfor %} 
+                  </select>
+                </div> -->
+              
+              </div>
+              <br>
+              <button class="btn btn-secondary btn-block  " type="submit"><i class="fa fa-search"></i> Search Here</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<br>
+  <!-- Alerts -->
+  {% include 'partials/_alerts.html' %}
+
+  <!-- Listings -->
+  <section id="listings" class="py-5">
+    <div class="container">
+      <h4 class="text-center mb-3" style="font-style: Comic Sans MS;">Top Destination</h4>
+      <hr  style="border-width: 3px; border-color: green; width: 40px;">
+      <div class="row">
+        <div class="container text-center my-3">
+         <h1></h1>
+          <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+              <div class="carousel-inner w-100" role="listbox">
+                  <div class="carousel-item row no-gutters active">
+                      <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/350x280/222/fff?text=1"></div>
+                      <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/350x280/444?text=2"></div>
+                      <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/350x280/888?text=3"></div>
+                      <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/350x280/111/fff?text=4"></div>
+                  </div>
+                  <div class="carousel-item row no-gutters">
+                      <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/350x280?text=5"></div>
+                      <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/350x280/555?text=6"></div>
+                      <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/350x280/333/fff?text=7"></div>
+                      <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/350x280/bbb?text=8"></div>
+                      
+                  </div>
+              </div>
+              <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section id="fact2" class="py-5 bg-secondary text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <i class="fas fa-comment fa-4x mr-4"></i>
+          <hr>
+          <h3>Consulting Services</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, debitis nam! Repudiandae, provident iste consequatur
+            hic dignissimos ratione ea quae.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-home fa-4x mr-4"></i>
+          <hr>
+          <h3>Propery Management</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, debitis nam! Repudiandae, provident iste consequatur
+            hic dignissimos ratione ea quae.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-suitcase fa-4x mr-4"></i>
+          <hr>
+          <h3>Renting & Selling</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, debitis nam! Repudiandae, provident iste consequatur
+            hic dignissimos ratione ea quae.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+{% endblock %}
