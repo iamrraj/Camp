@@ -64,7 +64,7 @@ MIDDLEWARE = [
 CORS_ORIGIN_ALLOW_ALL = True
 
 CORS_ORIGIN_WHITELIST = (
-    'localhost:3000',
+    'https://localhost:3000',
 )
 
 REST_FRAMEWORK = {
@@ -202,5 +202,5 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'rajr97555@gmail.com'
-EMAIL_HOST_PASSWORD = 'Rohit@1993'
+EMAIL_HOST_PASSWORD = 'RahulRaj@1995'
 EMAIL_PORT = 587
